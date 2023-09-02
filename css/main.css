@@ -1485,7 +1485,7 @@ blockquote {
     font-size: 11px;
     line-height: 1.2em;
     bottom: 15px;
-    left: 15px;
+    right: 15px;
     position: absolute;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1496,7 +1496,13 @@ blockquote {
 }
 
 .portfolio-grid figure:hover i, .portfolio-grid figure:hover .name, .portfolio-grid figure:hover .category {
-    opacity: 1
+    opacity: 1;
+    color: black;
+    background: white;
+    border: solid 0.11875rem #FF714A;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 2px;
 }
 
 .blog-masonry {
