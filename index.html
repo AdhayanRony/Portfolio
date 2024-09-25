@@ -1137,17 +1137,14 @@
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyMG61xuDhm40DDSuqS4HgjExCVJgcrFre4daWulVTcCVPlpai2CIvhhdsfyz_Q8uNr/exec'
-  const form = document.forms['portfolio-contact-from']
+											const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => {
-        alert("Thank you! Your form is submitted successfully.");
-        form.reset(); // Clear form fields after successful submission
-      })
-      .catch(error => console.error('Error!', error.message))
-  });
+											form.addEventListener('submit', e => {
+												e.preventDefault()
+												fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+													.then(response => console.log('Success!', response))
+													.catch(error => console.error('Error!', error.message))
+											})
 </script>
 
 										</div>
