@@ -1148,7 +1148,7 @@ form.addEventListener("submit", (e) => {
       alert("Thank you! your form is submitted successfully.")
     )
     .then(() => {
-      window.location.reload();
+      document.getElementById("myForm").reset();
     })
     .catch((error) => console.error("Error!", error.message));
 });
