@@ -1141,10 +1141,6 @@ const scriptURL =
 
 const form = document.forms["portfolio-contact-from"];
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-});
 
 </script>
 
